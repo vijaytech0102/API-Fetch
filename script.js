@@ -17,10 +17,10 @@ const fetchApi=async()=>{
         
         html+="<td>"+'$'+result[i].total_volume + "</td>";
         if(result[i].market_cap_change_percentage_24h<0){
-            html+="<td class='red'>"+result[i].market_cap_change_percentage_24h+"</td>";
+            html+="<td class='red'>"+result[i].market_cap_change_percentage_24h+'%'+"</td>";
         }
         else{
-            html+="<td class='green'>"+result[i].market_cap_change_percentage_24h+"</td>";
+            html+="<td class='green'>"+result[i].market_cap_change_percentage_24h+'%'+"</td>";
         }
         html+="<td>"+"Mkt Cap:"+'$'+result[i].market_cap + "</td>";
         html+="</tr>";
